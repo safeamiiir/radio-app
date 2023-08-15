@@ -4,21 +4,54 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin: 5px 5px;
 }
 
 body {
   background: linear-gradient(to right, rgb(40, 31, 53), rgb(61, 46, 83));
   color: rgb(235, 235, 235);
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+  display: grid;
+  grid-auto-flow: row dense;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 0.5fr 1fr 0fr;
+  grid-template-rows: 0.5fr 0fr 0fr;
+  gap: 0px 0px;
+  width: 50%;
+  height: 50%;
+}
+
+.hero {
+  text-align: center;
+}
+.text {
+  grid-area: 1 / 2 / 2 / 3;
 }
 
 h1 {
   margin: 1em 0 0 0;
   font-size: 3rem;
+  font-weight: 400;
 }
 
 h2 {
+  text-align: center;
+  font-weight: 400;
+}
+
+p {
+  font-size: 1.5em;
   margin-bottom: 2em;
+  text-align: center;
+}
+
+.hero img {
+  width: 200px;
+  height: 300px;
 }
 
 .radio {
@@ -59,7 +92,7 @@ h2 {
 
 .station {
   font-size: 1.2em;
-  border: 1px solid rgb(76, 62, 95);
+  border: 1px solid rgb(201 189 218);
   margin: 0.25em;
   border-radius: 10px;
   padding: 1em;
@@ -87,7 +120,7 @@ h2 {
   text-align: center;
 }
 
-img {
+.logo {
   display: block;
   width: 2.5em;
   height: 2.5em;
@@ -128,7 +161,7 @@ audio {
     grid-template-columns: repeat(2, 50%);
   }
 
-  img {
+  /* img {
     display: none;
-  }
+  } */
 }
