@@ -5,7 +5,7 @@ function Hero() {
   return (
     <section className='hero'>
       <div className='hero-content'>
-        <h1>Your own music</h1>
+        <h2>Your own music</h2>
         <p>Choose a station and enjoy</p>
       </div>
     </section>

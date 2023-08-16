@@ -43,12 +43,6 @@ h2 {
   font-weight: 400;
 }
 
-p {
-  font-size: 1.5em;
-  margin-bottom: 2em;
-  text-align: center;
-}
-
 .hero img {
   width: 200px;
   height: 300px;
@@ -98,8 +92,9 @@ p {
   padding: 1em;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  flex-basis: 100%;
+  position: relative;
+  padding: 24px;
 
   &:hover {
     border-color: #e36bae;
@@ -108,11 +103,9 @@ p {
 
 .stationName {
   display: flex;
-  flex-direction: row;
-  margin-bottom: 1em;
-  width: 100%;
-  align-items: center;
-  justify-content: start;
+  flex-direction: column;
+  position: relative;
+  margin: 5px 0 5px 0;
 }
 
 .name {
@@ -134,10 +127,13 @@ audio {
 }
 
 .rhap_container.player {
-  background-color: rgb(76, 62, 95);
-  display: flex;
-  justify-items: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: auto;
   padding: 0.25em 0.75em;
+  background-color: rgb(76, 62, 95);
   border-radius: 10px;
 }
 
@@ -160,8 +156,24 @@ audio {
   .stations {
     grid-template-columns: repeat(2, 50%);
   }
+  .name {
+    font-size: 0.8em;
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .logo {
+    object-fit: cover;
+    object-position: 50% 20%;
+  }
 
-  /* img {
-    display: none;
-  } */
+  .station {
+    padding: 12px;
+  }
+}
+
+@media only screen and (min-device-width: 601px) and (max-device-width: 1024px) {
+  .name {
+    text-align: left;
+  }
 }
