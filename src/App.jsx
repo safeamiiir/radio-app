@@ -1,6 +1,7 @@
 import './App.css';
 import Radio from './Radio';
 import Hero from './Hero';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <h1>Radio Player</h1>
       <Hero />
       <Radio />
+      <Footer />
     </div>
   );
 }
