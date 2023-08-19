@@ -4,7 +4,7 @@
   align-items: center;
   overflow: auto;
   flex-direction: column;
-  width: 100%;
+  margin: 5px 5px;
   text-align: center;
   padding: 45px 50px;
 }
