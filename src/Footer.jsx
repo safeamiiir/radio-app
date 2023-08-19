@@ -2,15 +2,17 @@ import React from 'react';
 import './Footer.css';
 
 function Footer() {
+  const linkedinURL = 'https://www.linkedin.com/in/olenareukova';
+
   return (
-    <footer class='footer'>
-      <div class='footer-right'>
-        <a href='#'>
-          <i class='fa fa-facebook'></i>
-        </a>
-      </div>
-      <div class='footer-left'>
+    <footer className='footer'>
+      <div className='footer-left'>
         <p>created by Olena Reukova &copy; 2023</p>
+      </div>
+      <div className='footer-right'>
+        <a href={linkedinURL} target='_blank' rel='noopener noreferrer'>
+          LinkedIn
+        </a>
       </div>
     </footer>
   );
