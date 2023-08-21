@@ -1,6 +1,7 @@
 {
   "name": "radio-app",
   "private": true,
+  "proxy": "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
