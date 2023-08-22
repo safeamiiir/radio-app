@@ -16,6 +16,7 @@ function App() {
 
     Cookies.set('yetAnotherCookie', 'yetAnotherValue', { sameSite: 'lax' });
   }, []);
+
   return (
     <div className='App'>
       <h1>Radio Player</h1>
