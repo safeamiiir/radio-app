@@ -24,32 +24,8 @@ export default function Radio() {
         tag: stationFilter,
         limit: 30,
       })
-      .then(async (data) => {
-        const stationsWithHttpsUrls = [];
-
-        for (const station of data) {
-          // Check if the station URL is secure (HTTPS)
-          if (station.urlResolved.startsWith('https:')) {
-            stationsWithHttpsUrls.push(station);
-          } else {
-            // If the URL is not secure, try to find an alternative station with HTTPS
-            const alternativeStations = await api.searchStations({
-              name: station.name,
-              limit: 1,
-              order: 'desc',
-            });
-
-            const secureAlternative = alternativeStations.find((altStation) =>
-              altStation.urlResolved.startsWith('https:')
-            );
-
-            if (secureAlternative) {
-              stationsWithHttpsUrls.push(secureAlternative);
-            }
-          }
-        }
-
-        return stationsWithHttpsUrls;
+      .then((data) => {
+        return data;
       });
 
     return stations;
