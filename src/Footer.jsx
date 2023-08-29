@@ -7,13 +7,9 @@ function Footer() {
   return (
     <footer className='footer'>
       <div className='footer-left'>
-        <p>created by Olena Reukova &copy; 2023</p>
+        <p> 2023</p>
       </div>
-      <div className='footer-right'>
-        <a href={linkedinURL} target='_blank' rel='noopener noreferrer'>
-          LinkedIn
-        </a>
-      </div>
+      <div className='footer-right'></div>
     </footer>
   );
 }
