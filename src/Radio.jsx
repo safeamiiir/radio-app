@@ -18,15 +18,11 @@ export default function Radio() {
   const setupApi = async (stationFilter) => {
     const api = new RadioBrowserApi(fetch.bind(window), 'My Radio App');
 
-    // Manually construct the HTTPS endpoint
-    const endpoint = 'https://all.api.radio-browser.info/json/servers';
-
     const stations = await api
       .searchStations({
         language: 'english',
         tag: stationFilter,
         limit: 30,
-        endpoint: endpoint, // Pass the HTTPS endpoint here
       })
       .then((data) => {
         return data;
