@@ -23,6 +23,7 @@ export default function Radio() {
         language: 'english',
         tag: stationFilter,
         limit: 30,
+        https: true,
       })
       .then((data) => {
         return data;
